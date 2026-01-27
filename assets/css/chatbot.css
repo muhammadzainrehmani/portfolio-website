@@ -1,0 +1,284 @@
+/* Main chat container styling */
+
+.chat-container-brd {
+  width: 30vw;
+  margin: 20px auto;
+  border-radius: 5px;
+  font-family: "Mulish", serif;
+}
+
+#chat-window-brd {
+  padding: 10px;
+  /* height: 20vh; */
+  overflow-y: auto;
+  scroll-behavior: smooth;
+}
+
+/* Custom scrollbar styling */
+
+#chat-window-brd::-webkit-scrollbar {
+  width: 7px;
+}
+
+#chat-window-brd::-webkit-scrollbar-thumb {
+  background: #d9dadf;
+  border-radius: 8px;
+}
+
+/* Input area container styling*/
+
+.input-area-brd {
+  display: flex;
+  align-items: center;
+  background: transparent;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  overflow: hidden;
+  margin-inline: 10px;
+  padding: 3px;
+  transition: border-color 0.3s ease;
+}
+
+.input-area-brd:hover {
+  border-color: #8a3dff;
+}
+
+#user-input-brd {
+  flex: 1;
+  padding: 10px;
+  border: none;
+  background: transparent;
+  outline: none;
+  color: #333;
+  font-size: 16px;
+  border-radius: 5px;
+}
+
+#user-input-brd::placeholder {
+  color: #aaa;
+}
+
+#send-button-brd {
+  background: transparent;
+  border: none;
+  padding: 10px;
+  cursor: pointer;
+  outline: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 5px;
+  transition: background-color 0.3s ease;
+}
+
+#send-button-brd:hover {
+  background-color: #6600ff47;
+}
+
+#send-button-brd img {
+  width: 20px;
+  height: 20px;
+}
+
+/* Popup icon styling */
+
+#chat-icon-brd {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  cursor: pointer;
+  display: inline-block;
+  padding: 10px;
+  border-radius: 50%;
+  box-shadow: 0 0 10px rgba(139, 61, 255, 0.743);
+  background-color: white;
+}
+
+#chat-icon-brd img {
+  width: 50px;
+  height: 50px;
+}
+
+/* chat Popup styling */
+
+#chat-popup-brd {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  min-width: 30vw;
+  /* min-height: 80vh; */
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  background-color: white;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+  display: none;
+  overflow: hidden;
+  z-index: 1;
+}
+
+/* Close button styling */
+
+#close-chat-brd {
+  position: absolute;
+  top: 0px;
+  right: 0px;
+  border: none;
+  background: none;
+  cursor: pointer;
+  color: #8a3dff;
+  border-radius: 5px;
+  padding: 10px;
+  transition: background-color 0.3s ease;
+}
+
+#close-chat-brd:hover {
+  background-color: #6600ff47;
+}
+
+.close-chat-container-brd {
+  height: 20px;
+}
+
+#close-chat-brd img {
+  width: 20px;
+  height: 20px;
+}
+
+/* Delete the conversation styling */
+
+#delete-chat-brd {
+  background: transparent;
+  border: none;
+  padding: 10px;
+  cursor: pointer;
+  outline: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 5px;
+  transition: background-color 0.3s ease;
+}
+
+#delete-chat-brd:hover {
+  background-color: #6600ff47;
+}
+
+#delete-chat-brd img {
+  width: 20px;
+  height: 20px;
+}
+
+/* message content styling */
+
+.message-brd {
+  margin-bottom: 10px;
+  padding: 10px;
+  border-radius: 5px;
+  display: flex;
+  align-items: center;
+  width: auto;
+  flex-wrap: wrap;
+}
+
+.message-brd.user-brd {
+  text-align: right;
+  justify-content: flex-end;
+  font-family: "Mulish", serif;
+}
+
+.message-brd.bot-brd {
+  background-color: #F5F5F5;
+  text-align: left;
+  justify-content: flex-start;
+  font-family: "Mulish", serif;
+}
+
+.message-icon-brd {
+  width: 30px;
+  height: 30px;
+  margin-right: 10px;
+  border-radius: 50%;
+}
+
+/* Optional: Add a specific style for long messages */
+.message-brd.long-brd {
+  overflow-y: auto;
+  max-height: 200px;
+}
+
+/* Sample prompt styling */
+
+#sample-prompts-brd {
+  /* margin-top: 20px; */
+  padding: 10px;
+  border-radius: 5px;
+  padding-inline: 20px;
+}
+
+#sample-prompts-brd h3 {
+  margin-top: 0;
+}
+
+#sample-prompts-brd ul {
+  list-style: none;
+  padding: 0;
+}
+
+#sample-prompts-brd li {
+  margin-bottom: 5px;
+}
+
+#sample-prompts-brd ul {
+  margin-block: 0px;
+}
+
+.prompt-button-brd {
+  background-color: transparent;
+  border: 1px solid #ccc;
+  color: #1D1E20;
+  padding: 10px 17px;
+  margin-top: 8px;
+  text-align: left;
+  text-decoration: none;
+  display: inline-block;
+  border-radius: 999px;
+  cursor: pointer;
+  transition: border-color 0.3s ease;
+  font-size: 14px;
+  width: 100%;
+  font-weight: 400;
+  font-family: "Mulish", serif;
+}
+
+.prompt-button-brd:hover {
+  border-color: #6600ff;
+}
+
+.comman-question-brd {
+  color: #1D1E20;
+  font-size: 14px;
+  font-weight: 400;
+  font-family: "Mulish", serif;
+}
+
+/* Spinner styling */
+
+.loading-spinner-brd {
+  display: inline-block;
+  width: 15px;
+  height: 15px;
+  border: 3px solid #ccc;
+  border-radius: 50%;
+  border-top-color: #8a3dff;
+  animation: spin 1s linear infinite;
+}
+
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+
+  100% {
+    transform: rotate(360deg);
+  }
+}
