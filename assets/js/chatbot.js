@@ -6,7 +6,6 @@ import { marked } from "https://esm.run/marked";
 let samplePromptsShown = true; // Flag to track if sample prompts are shown
 let firstMessageSent = false; // Flag to track the first message
 
-const genAI = new GoogleGenerativeAI("AIzaSyCRvWyiexLtAbHAfPHSq2TRXncODn4Ab0A");
 const model = genAI.getGenerativeModel({ model: "gemini-1.5-flash" });
 
 // Display Message
